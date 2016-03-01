@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => 'mongodb',
 
     /*
     |--------------------------------------------------------------------------
@@ -85,6 +85,18 @@ return [
             'charset'  => 'utf8',
             'prefix'   => '',
         ],
+
+        'mongodb' => [
+    'driver'   => 'mongodb',
+    'host'     => 'ds019708.mlab.com',
+    'port'     => 19708,
+    'database' => 'gmsbeachstay',
+    'username' => 'laravel',
+    'password' => 'Orion123,./',
+    'options' => [
+        'db' => 'gmsbeachstay' // sets the authentication database required by mongo 3
+    ]
+],
 
     ],
 
