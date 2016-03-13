@@ -1,14 +1,95 @@
 In-house Guest profile
 
-Invoice feature with provisional bill viewing
+a)address
+  building
+  floor
+  appartment
+  road
+  city
+  state
+  country
+  postal code
+
+b)contact info
+  phone
+  fax
+  email
+c)corporate info
+  company name
+  company registration number
+d)legal
+  tax
+    -name
+    -type [fixed,percentage]
+    -value
+    -authority
+
+
+Customers
+  basic profile
+    name
+    address
+    city
+    state
+    country
+    postal code
+  contact information
+    phone
+    email
+    fax (if applicable)
+  identification
+    Passport Number
+    Country
+    Expiry Date
 
 Food and beverage bills with items code
 
-TGST breakdown
+  a) FNB Categories
+    category name
+    category description
 
-Serivce Charge breakdown
+  b) FNB Items
+    item code
+    item name
+    item category
+    price
+
+
+
+Expenses
+  supplier_name
+  bill_reference
+  bill_value
+  bill_details
+
+
+/------------------------------------------------------------------------/
+
+FOR HOTEL BILLS
+  rooms
+  services
+  items
+
+fnbBills
+  id
+  clientId
+  type [cash,credit]
+  customerId (only if billed to customer)
+  items [itemCode,itemName,itemPrice,itemPrice,quantity]
+  tax[name,type,value,authority]
+  timestamps
+
+
+hotelBills
+  id
+  clientId
+
+customerInvoice
+
+
 
 MIRA Reports
+
 
 Economic Ministry annual reports
 
