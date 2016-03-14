@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return phpinfo();
-});
+Route::get('/',function(){return redirect('/dashboard');});
+
+Route::get('/dashboard','applicationViewController@dashboard');
+
+//
 
 /*
 |--------------------------------------------------------------------------

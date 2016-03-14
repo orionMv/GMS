@@ -12,7 +12,7 @@ class CustomerProfileTable extends Migration
      */
     public function up()
     {
-        Schema::create('clientProfile',function(BluBlueprint $table){
+        Schema::create('clientProfile',function(Blueprint $table){
 
           $table -> increments('id');
           $table -> string('building');

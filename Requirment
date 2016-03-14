@@ -63,12 +63,41 @@ Expenses
   bill_details
 
 
-/------------------------------------------------------------------------/
 
 FOR HOTEL BILLS
   rooms
+    id
+    clientId
+    name
+    roomNumber
+    description
+    image
+    rate
+    quantity
+
+  roomsBooking
+    id
+    clientId
+    roomId
+    customerId
+    dateFrom
+    dateTo
+
   services
+    id
+    clientId
+    name
+    description
+    image
+    rate
+
   items
+    id
+    clientId
+    name
+    description
+    image
+    rate
 
 fnbBills
   id
@@ -83,9 +112,23 @@ fnbBills
 hotelBills
   id
   clientId
+  customerId
+  rooms[singleRoom,n]
+  services[singleService, n]
+  items[singleItem,n]
+  tax
+  timestamps
 
 customerInvoice
+  clientId
+  customerId
+  hotelBills
+  fnbBills
+  tax
+  timestamps
 
+
+  /------------------------------------------------------------------------/
 
 
 MIRA Reports

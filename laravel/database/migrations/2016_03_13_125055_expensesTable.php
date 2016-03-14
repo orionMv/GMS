@@ -12,9 +12,9 @@ class ExpensesTable extends Migration
      */
     public function up()
     {
-        Schemma::create('expenses',function(Blueprint $table){
+        Schema::create('expenses',function(Blueprint $table){
 
-          $table-> increments();
+          $table-> increments('id');
           $table-> string('clientId');
           $table-> string('supplierName');
           $table-> string('billReference');
@@ -32,6 +32,6 @@ class ExpensesTable extends Migration
      */
     public function down()
     {
-        Schema:;dropIfExists('expenses');
+        Schema::dropIfExists('expenses');
     }
 }
