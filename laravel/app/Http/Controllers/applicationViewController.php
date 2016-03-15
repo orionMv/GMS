@@ -13,4 +13,10 @@ class applicationViewController extends Controller
       return view('app.pages.dashboard');
 
     }
+
+    public function profile(){
+
+      return view('app.pages.profile');
+
+    }
 }

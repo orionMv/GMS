@@ -14,6 +14,7 @@
 Route::get('/',function(){return redirect('/dashboard');});
 
 Route::get('/dashboard','applicationViewController@dashboard');
+Route::get('/profile','applicationViewController@profile');
 
 //
 
