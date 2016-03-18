@@ -34,6 +34,6 @@ class RoomsTable extends Migration
      */
     public function down()
     {
-        Schema::dopIfExists('rooms');
+        Schema::dropIfExists('rooms');
     }
 }

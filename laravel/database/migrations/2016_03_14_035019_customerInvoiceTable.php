@@ -32,6 +32,6 @@ class CustomerInvoiceTable extends Migration
      */
     public function down()
     {
-        Schema::dopIfExists('customerInvoice');
+        Schema::dropIfExists('customerInvoice');
     }
 }

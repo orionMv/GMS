@@ -27,6 +27,7 @@ class CustomerProfileTable extends Migration
           $table -> string('email');
           $table -> string('companyName');
           $table -> string('companyRegistrationNumber');
+          $table -> string('logo');
           $table -> timestamps();
 
         });

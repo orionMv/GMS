@@ -33,6 +33,6 @@ class FnbBillsTable extends Migration
      */
     public function down()
     {
-        Schema:;dropIfExists('fnbBills');
+        Schema::dropIfExists('fnbBills');
     }
 }

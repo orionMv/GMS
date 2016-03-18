@@ -6,6 +6,7 @@ Profile
 
 
 @section('pageStyles')
+<link rel="stylesheet" href="/assets/css/client-profile.css">
 @endsection
 
 
@@ -33,14 +34,203 @@ Profile
 
 
 
-<div class="blank row">
+<section class="blank row">
 
 
-			<div class=" col-lg-1 blank-page">
+			<article class="col-lg-12 blank-page">
 
-	        	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-	        		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-	  </div>
-</div>
+				<!-- client profile logo goes here -->
+				<img src="" alt="" />
+
+			</article>
+
+			<article class="col-lg-12 profile-list blank-page">
+
+				  <div class="row">
+
+						<div class="col-lg-3 info-label">
+							Company Name:
+						</div>
+
+						<div class="col-lg-9 info-detail">
+							 Abdulla Kaleem
+						</div>
+
+				  </div>
+
+					<div class="row">
+
+						<div class="col-lg-3 info-label">
+							Registration Number:
+						</div>
+
+						<div class="col-lg-9 info-detail">
+							 Abdulla Kaleem
+						</div>
+
+				  </div>
+
+
+					<div class="row">
+
+						<div class="col-lg-3 info-label">
+							Building:
+						</div>
+
+						<div class="col-lg-9 info-detail">
+							 Abdulla Kaleem
+						</div>
+
+					</div>
+
+
+					<div class="row">
+
+						<div class="col-lg-3 info-label">
+							Floor:
+						</div>
+
+						<div class="col-lg-9 info-detail">
+							 Abdulla Kaleem
+						</div>
+
+					</div>
+
+
+					<div class="row">
+
+						<div class="col-lg-3 info-label">
+							Road:
+						</div>
+
+						<div class="col-lg-9 info-detail">
+							 Abdulla Kaleem
+						</div>
+
+					</div>
+
+
+					<div class="row">
+
+						<div class="col-lg-3 info-label">
+							City:
+						</div>
+
+						<div class="col-lg-9 info-detail">
+							 Abdulla Kaleem
+						</div>
+
+					</div>
+
+
+					<div class="row">
+
+						<div class="col-lg-3 info-label">
+							State:
+						</div>
+
+						<div class="col-lg-9 info-detail">
+							 Abdulla Kaleem
+						</div>
+
+					</div>
+
+
+					<div class="row">
+
+						<div class="col-lg-3 info-label">
+							Country:
+						</div>
+
+						<div class="col-lg-9 info-detail">
+							 Abdulla Kaleem
+						</div>
+
+					</div>
+
+
+					<div class="row">
+
+						<div class="col-lg-3 info-label">
+							Portal Code:
+						</div>
+
+						<div class="col-lg-9 info-detail">
+							 Abdulla Kaleem
+						</div>
+
+					</div>
+
+
+					<div class="row">
+
+						<div class="col-lg-3 info-label">
+							Phone:
+						</div>
+
+						<div class="col-lg-9 info-detail">
+							 Abdulla Kaleem
+						</div>
+
+					</div>
+
+
+					<div class="row">
+
+						<div class="col-lg-3 info-label">
+							Fax:
+						</div>
+
+						<div class="col-lg-9 info-detail">
+							 Abdulla Kaleem
+						</div>
+
+					</div>
+
+
+					<div class="row">
+
+						<div class="col-lg-3 info-label">
+							Email:
+						</div>
+
+						<div class="col-lg-9 info-detail">
+							 Abdulla Kaleem
+						</div>
+
+					</div>
+
+
+					<div class="row">
+
+						<div class="col-lg-3 info-label">
+							Registered On:
+						</div>
+
+						<div class="col-lg-9 info-detail">
+							 Abdulla Kaleem
+						</div>
+
+					</div>
+
+
+					<div class="row">
+
+						<div class="col-lg-3 info-label">
+							Last Profile Update:
+						</div>
+
+						<div class="col-lg-9 info-detail">
+							 Abdulla Kaleem
+						</div>
+
+					</div>
+
+
+			</article>
+
+
+
+</section>
 
 @endsection

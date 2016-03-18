@@ -1,0 +1,34 @@
+.profile-list{
+
+  color: #555;
+
+}
+
+.profile-list .row {
+
+  padding: 15px 0;
+  border-bottom: dashed #CCC 1px;
+
+}
+
+.profile-list .row:last-child{
+
+  border: none;
+
+}
+
+.profile-list .info-label {
+
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: left;
+
+}
+
+.profile-list .info-detail{
+
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: lighter;
+
+}
