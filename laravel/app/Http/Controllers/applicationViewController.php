@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+// data models
+use App\clientProfile;
+
 class applicationViewController extends Controller
 {
     public function dashboard(){
@@ -16,7 +19,9 @@ class applicationViewController extends Controller
 
     public function profile(){
 
-      return view('app.pages.profile');
+
+
+      return view('app.pages.profile',['profle'=>$userProfile]);
 
     }
 }
