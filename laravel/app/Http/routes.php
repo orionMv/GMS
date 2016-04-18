@@ -11,13 +11,6 @@
 |
 */
 
-Route::get('/',function(){return redirect('/dashboard');});
-
-Route::get('/dashboard','applicationViewController@dashboard');
-
-// Profile Routes
-Route::get('/profile','applicationViewController@profile');
-// Route::get('','');
 
 //
 
@@ -33,5 +26,26 @@ Route::get('/profile','applicationViewController@profile');
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+    
+    
+Route::get('/',function(){return redirect('/dashboard');});
+
+
+//Dashboard Route
+Route::get('/dashboard',['as'=>'viewDashBoard','uses'=>'applicationViewController@dashboard']);
+
+    
+    
+// Profile Routes
+Route::get('/profile',['as'=>'viewClientProfilePage','uses'=>'applicationViewController@profile']);
+
+Route::group(['prefix'=>'profile'],function(){
+    
+    Route::get('update',['as'=>'updateClientProfilePage','uses'=>'clientProfileController@updateClientProfile']);
+    Route::post('update',['as'=>'updateClientProfileRequest','uses'=>'clientProfileController@update']);
+    
+});
+
+    
+    
 });

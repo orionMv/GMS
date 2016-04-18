@@ -15,6 +15,7 @@ class CustomerProfileTable extends Migration
         Schema::create('clientProfile',function(Blueprint $table){
 
           $table -> increments('id');
+          $table -> string('clientId');
           $table -> string('building');
           $table -> string('floor');
           $table -> string('road');

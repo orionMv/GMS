@@ -19,12 +19,17 @@ Profile
 
 <h2>
 
-<a href="/dashboard">Home</a>
+    <a href="{{route('viewDashBoard')}}">Home</a>
 
-<i class="fa fa-angle-right"></i>
-<span>Profile</span>
+    <i class="fa fa-angle-right"></i>
 
+    <span>Profile</span>
+
+    <a class="pull-right text-primary" href="{{route('updateClientProfilePage')}}"> UPDATE PROFILE </a>
+    
 </h2>
+    
+    
 </div>
 
 @endsection
@@ -40,7 +45,11 @@ Profile
 			<article class="col-lg-12 blank-page">
 
 				<!-- client profile logo goes here -->
-				<img src="" alt="" />
+				@if(isset($userProfile->logo) && $userProfile->logo != null)
+                
+                    <img src="{{asset($userProfile->clientId.'/'.$userProfile->logo)}}" alt="" />
+                
+                @endif
 
 			</article>
 
@@ -53,7 +62,7 @@ Profile
 						</div>
 
 						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
+							 {{$userProfile->companyName}}
 						</div>
 
 				  </div>
@@ -65,7 +74,7 @@ Profile
 						</div>
 
 						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
+							 {{$userProfile->companyRegistrationNumber}}
 						</div>
 
 				  </div>
@@ -78,7 +87,7 @@ Profile
 						</div>
 
 						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
+							 {{$userProfile->building}}
 						</div>
 
 					</div>
@@ -91,7 +100,7 @@ Profile
 						</div>
 
 						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
+							 {{$userProfile->floor}}
 						</div>
 
 					</div>
@@ -104,7 +113,7 @@ Profile
 						</div>
 
 						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
+							 {{$userProfile->road}}
 						</div>
 
 					</div>
@@ -117,7 +126,7 @@ Profile
 						</div>
 
 						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
+							 {{$userProfile->city}}
 						</div>
 
 					</div>
@@ -130,7 +139,7 @@ Profile
 						</div>
 
 						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
+							 {{$userProfile->state}}
 						</div>
 
 					</div>
@@ -143,7 +152,7 @@ Profile
 						</div>
 
 						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
+							 {{$userProfile->country}}
 						</div>
 
 					</div>
@@ -156,7 +165,7 @@ Profile
 						</div>
 
 						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
+							 {{$userProfile->postalCode}}
 						</div>
 
 					</div>
@@ -169,7 +178,7 @@ Profile
 						</div>
 
 						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
+							 {{$userProfile->phone}}
 						</div>
 
 					</div>
@@ -182,7 +191,7 @@ Profile
 						</div>
 
 						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
+							 {{$userProfile->fax}}
 						</div>
 
 					</div>
@@ -195,7 +204,7 @@ Profile
 						</div>
 
 						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
+							 {{$userProfile->email}}
 						</div>
 
 					</div>
@@ -208,7 +217,7 @@ Profile
 						</div>
 
 						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
+							 {{$userProfile->created_at}}
 						</div>
 
 					</div>
@@ -221,7 +230,7 @@ Profile
 						</div>
 
 						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
+							 {{$userProfile->updated_at}}
 						</div>
 
 					</div>

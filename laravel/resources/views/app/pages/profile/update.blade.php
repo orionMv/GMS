@@ -19,11 +19,11 @@ Profile
 
 <h2>
 
-<a href="/dashboard">Home</a>
+<a href="{{route('viewDashBoard')}}">Home</a>
 
 <i class="fa fa-angle-right"></i>
 
-<a href="/profile">Profile</a>
+<a href="{{route('viewClientProfilePage')}}">Profile</a>
 
 <i class="fa fa-angle-right"></i>
 
@@ -40,6 +40,8 @@ Profile
 
 
 <section class="blank row">
+    
+        {{Form::open(['route'=>'updateClientProfileRequest','files'=>true,'method'=>'post'])}}
 
 
 			<article class="col-lg-12 blank-page text-center">
@@ -231,7 +233,8 @@ Profile
 
 					</div>
 
-
+                    {{Form::close()}}
+                
 			</article>
 
 

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use Api;
+
 // data models
 use App\clientProfile;
 
@@ -19,9 +21,11 @@ class applicationViewController extends Controller
 
     public function profile(){
 
+        $clientId = Api::getClientId();
+        
+        $userProfile = clientProfile::where('clientId',$clientId)->firstOrFail();
 
-
-      return view('app.pages.profile',['profle'=>$userProfile]);
+      return view('app.pages.profile',compact('userProfile'));
 
     }
 }
