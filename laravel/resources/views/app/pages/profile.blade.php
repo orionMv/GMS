@@ -26,10 +26,10 @@ Profile
     <span>Profile</span>
 
     <a class="pull-right text-primary" href="{{route('updateClientProfilePage')}}"> UPDATE PROFILE </a>
-    
+
 </h2>
-    
-    
+
+
 </div>
 
 @endsection
@@ -42,26 +42,26 @@ Profile
 <section class="blank row">
 
 
-			<article class="col-lg-12 blank-page">
+			<article class="col-sm-12 blank-page">
 
 				<!-- client profile logo goes here -->
 				@if(isset($userProfile->logo) && $userProfile->logo != null)
-                
+
                     <img src="{{asset($userProfile->clientId.'/'.$userProfile->logo)}}" alt="" />
-                
+
                 @endif
 
 			</article>
 
-			<article class="col-lg-12 profile-list blank-page">
+			<article class="col-sm-12 profile-list blank-page">
 
 				  <div class="row">
 
-						<div class="col-lg-3 info-label">
+						<div class="col-sm-3 info-label">
 							Company Name:
 						</div>
 
-						<div class="col-lg-9 info-detail">
+						<div class="col-sm-9 info-detail">
 							 {{$userProfile->companyName}}
 						</div>
 
@@ -69,11 +69,11 @@ Profile
 
 					<div class="row">
 
-						<div class="col-lg-3 info-label">
+						<div class="col-sm-3 info-label">
 							Registration Number:
 						</div>
 
-						<div class="col-lg-9 info-detail">
+						<div class="col-sm-9 info-detail">
 							 {{$userProfile->companyRegistrationNumber}}
 						</div>
 
@@ -82,11 +82,11 @@ Profile
 
 					<div class="row">
 
-						<div class="col-lg-3 info-label">
+						<div class="col-sm-3 info-label">
 							Building:
 						</div>
 
-						<div class="col-lg-9 info-detail">
+						<div class="col-sm-9 info-detail">
 							 {{$userProfile->building}}
 						</div>
 
@@ -95,11 +95,11 @@ Profile
 
 					<div class="row">
 
-						<div class="col-lg-3 info-label">
+						<div class="col-sm-3 info-label">
 							Floor:
 						</div>
 
-						<div class="col-lg-9 info-detail">
+						<div class="col-sm-9 info-detail">
 							 {{$userProfile->floor}}
 						</div>
 
@@ -108,11 +108,11 @@ Profile
 
 					<div class="row">
 
-						<div class="col-lg-3 info-label">
+						<div class="col-sm-3 info-label">
 							Road:
 						</div>
 
-						<div class="col-lg-9 info-detail">
+						<div class="col-sm-9 info-detail">
 							 {{$userProfile->road}}
 						</div>
 
@@ -121,11 +121,11 @@ Profile
 
 					<div class="row">
 
-						<div class="col-lg-3 info-label">
+						<div class="col-sm-3 info-label">
 							City:
 						</div>
 
-						<div class="col-lg-9 info-detail">
+						<div class="col-sm-9 info-detail">
 							 {{$userProfile->city}}
 						</div>
 
@@ -134,11 +134,11 @@ Profile
 
 					<div class="row">
 
-						<div class="col-lg-3 info-label">
+						<div class="col-sm-3 info-label">
 							State:
 						</div>
 
-						<div class="col-lg-9 info-detail">
+						<div class="col-sm-9 info-detail">
 							 {{$userProfile->state}}
 						</div>
 
@@ -147,11 +147,11 @@ Profile
 
 					<div class="row">
 
-						<div class="col-lg-3 info-label">
+						<div class="col-sm-3 info-label">
 							Country:
 						</div>
 
-						<div class="col-lg-9 info-detail">
+						<div class="col-sm-9 info-detail">
 							 {{$userProfile->country}}
 						</div>
 
@@ -160,11 +160,11 @@ Profile
 
 					<div class="row">
 
-						<div class="col-lg-3 info-label">
+						<div class="col-sm-3 info-label">
 							Portal Code:
 						</div>
 
-						<div class="col-lg-9 info-detail">
+						<div class="col-sm-9 info-detail">
 							 {{$userProfile->postalCode}}
 						</div>
 
@@ -173,11 +173,11 @@ Profile
 
 					<div class="row">
 
-						<div class="col-lg-3 info-label">
+						<div class="col-sm-3 info-label">
 							Phone:
 						</div>
 
-						<div class="col-lg-9 info-detail">
+						<div class="col-sm-9 info-detail">
 							 {{$userProfile->phone}}
 						</div>
 
@@ -186,11 +186,11 @@ Profile
 
 					<div class="row">
 
-						<div class="col-lg-3 info-label">
+						<div class="col-sm-3 info-label">
 							Fax:
 						</div>
 
-						<div class="col-lg-9 info-detail">
+						<div class="col-sm-9 info-detail">
 							 {{$userProfile->fax}}
 						</div>
 
@@ -199,11 +199,11 @@ Profile
 
 					<div class="row">
 
-						<div class="col-lg-3 info-label">
+						<div class="col-sm-3 info-label">
 							Email:
 						</div>
 
-						<div class="col-lg-9 info-detail">
+						<div class="col-sm-9 info-detail">
 							 {{$userProfile->email}}
 						</div>
 
@@ -212,11 +212,11 @@ Profile
 
 					<div class="row">
 
-						<div class="col-lg-3 info-label">
+						<div class="col-sm-3 info-label">
 							Registered On:
 						</div>
 
-						<div class="col-lg-9 info-detail">
+						<div class="col-sm-9 info-detail">
 							 {{$userProfile->created_at}}
 						</div>
 
@@ -225,11 +225,11 @@ Profile
 
 					<div class="row">
 
-						<div class="col-lg-3 info-label">
+						<div class="col-sm-3 info-label">
 							Last Profile Update:
 						</div>
 
-						<div class="col-lg-9 info-detail">
+						<div class="col-sm-9 info-detail">
 							 {{$userProfile->updated_at}}
 						</div>
 

@@ -40,201 +40,110 @@ Profile
 
 
 <section class="blank row">
-    
+
         {{Form::open(['route'=>'updateClientProfileRequest','files'=>true,'method'=>'post'])}}
 
 
-			<article class="col-lg-12 blank-page text-center">
+			<article class="col-sm-12 blank-page text-center">
 
 				<!-- client profile logo goes here -->
 				<img src="" width="150" alt="" />
 
 			</article>
 
-			<article class="col-lg-12 profile-list blank-page">
+			<article class="col-sm-12 profile-list blank-page">
 
 				  <div class="row">
 
-						<div class="col-lg-3 info-label">
-							Company Name:
+              <div class="col-sm-12">
+
+
+						<div class="info-detail form-group {{$errors->has('companyName') ? 'has-error' : null}}">
+
+               {!! Form::label('companyName','Company Name') !!}
+               {!! Form::text('companyName',$clientProfile->companyName,['class'=>'form-control']) !!}
 						</div>
 
-						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
-						</div>
+            <div class="info-detail form-group {{$errors->has('companyRegistrationNumber') ? 'has-error' : null}}">
 
-				  </div>
+               {!! Form::label('companyRegistrationNumber','Company Registration Number') !!}
+               {!! Form::text('companyRegistrationNumber',$clientProfile->companyRegistrationNumber,['class'=>'form-control']) !!}
+            </div>
 
-					<div class="row">
+            <div class="info-detail form-group {{$errors->has('bulidng') ? 'has-error' : null}}">
 
-						<div class="col-lg-3 info-label">
-							Registration Number:
-						</div>
+               {!! Form::label('building','Building Name') !!}
+               {!! Form::text('building',$clientProfile->building,['class'=>'form-control']) !!}
+            </div>
 
-						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
-						</div>
+            <div class="info-detail form-group {{$errors->has('floor') ? 'has-error' : null}}">
 
-				  </div>
+               {!! Form::label('florr','Floor') !!}
+               {!! Form::text('floor',$clientProfile->floor,['class'=>'form-control']) !!}
+            </div>
 
+            <div class="info-detail form-group {{$errors->has('road') ? 'has-error' : null}}">
 
-					<div class="row">
+               {!! Form::label('road','Road') !!}
+               {!! Form::text('road',$clientProfile->road,['class'=>'form-control']) !!}
+            </div>
 
-						<div class="col-lg-3 info-label">
-							Building:
-						</div>
+            <div class="info-detail form-group {{$errors->has('city') ? 'has-error' : null}}">
 
-						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
-						</div>
+               {!! Form::label('city','City') !!}
+               {!! Form::text('city',$clientProfile->city,['class'=>'form-control']) !!}
+            </div>
 
-					</div>
+            <div class="info-detail form-group {{$errors->has('state') ? 'has-error' : null}}">
 
+               {!! Form::label('state','State') !!}
+               {!! Form::text('state',$clientProfile->state,['class'=>'form-control']) !!}
+            </div>
 
-					<div class="row">
+            <div class="info-detail form-group {{$errors->has('country') ? 'has-error' : null}}">
 
-						<div class="col-lg-3 info-label">
-							Floor:
-						</div>
+               {!! Form::label('country','Country') !!}
+               {!! Form::text('country',$clientProfile->country,['class'=>'form-control']) !!}
+            </div>
 
-						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
-						</div>
+            <div class="info-detail form-group {{$errors->has('postalCode') ? 'has-error' : null}}">
 
-					</div>
+               {!! Form::label('postalCode','Postal Code') !!}
+               {!! Form::text('postalCode',$clientProfile->postalCode,['class'=>'form-control']) !!}
+            </div>
 
+            <div class="info-detail form-group {{$errors->has('phone') ? 'has-error' : null}}">
 
-					<div class="row">
+               {!! Form::label('phone','Phone') !!}
+               {!! Form::text('phone',$clientProfile->phone,['class'=>'form-control']) !!}
+            </div>
 
-						<div class="col-lg-3 info-label">
-							Road:
-						</div>
+            <div class="info-detail form-group {{$errors->has('fax') ? 'has-error' : null}}">
 
-						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
-						</div>
+               {!! Form::label('fax','Fax') !!}
+               {!! Form::text('fax',$clientProfile->fax,['class'=>'form-control']) !!}
+            </div>
 
-					</div>
+            <div class="info-detail form-group {{$errors->has('email') ? 'has-error' : null}}">
 
+               {!! Form::label('email','Email') !!}
+               {!! Form::text('email',$clientProfile->email,['class'=>'form-control']) !!}
+            </div>
 
-					<div class="row">
+            <div class="info-detail form-group {{$errors->has('state') ? 'has-error' : null}}">
 
-						<div class="col-lg-3 info-label">
-							City:
-						</div>
+               {!! Form::submit('UPDATE',['class'=>'form-control btn btn-primary']) !!}
+            </div>
 
-						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
-						</div>
+          </div> <!-- col-sm-12 END -->
 
-					</div>
+        </div> <!-- row END -->
 
 
-					<div class="row">
 
-						<div class="col-lg-3 info-label">
-							State:
-						</div>
 
-						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
-						</div>
+        {{Form::close()}}
 
-					</div>
-
-
-					<div class="row">
-
-						<div class="col-lg-3 info-label">
-							Country:
-						</div>
-
-						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
-						</div>
-
-					</div>
-
-
-					<div class="row">
-
-						<div class="col-lg-3 info-label">
-							Portal Code:
-						</div>
-
-						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
-						</div>
-
-					</div>
-
-
-					<div class="row">
-
-						<div class="col-lg-3 info-label">
-							Phone:
-						</div>
-
-						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
-						</div>
-
-					</div>
-
-
-					<div class="row">
-
-						<div class="col-lg-3 info-label">
-							Fax:
-						</div>
-
-						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
-						</div>
-
-					</div>
-
-
-					<div class="row">
-
-						<div class="col-lg-3 info-label">
-							Email:
-						</div>
-
-						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
-						</div>
-
-					</div>
-
-
-					<div class="row">
-
-						<div class="col-lg-3 info-label">
-							Registered On:
-						</div>
-
-						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
-						</div>
-
-					</div>
-
-
-					<div class="row">
-
-						<div class="col-lg-3 info-label">
-							Last Profile Update:
-						</div>
-
-						<div class="col-lg-9 info-detail">
-							 Abdulla Kaleem
-						</div>
-
-					</div>
-
-                    {{Form::close()}}
-                
 			</article>
 
 
